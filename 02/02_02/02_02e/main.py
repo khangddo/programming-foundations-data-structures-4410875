@@ -5,7 +5,19 @@ has in a given class.
 
 student_pet_count_list = [0, 1, 0, 2, 1, 1, 4, 0, 0, 0, 3, 2, 1, 3, 0, 2, 2, 4]
 
+student_pet_count_list[2] += 3
+student_pet_count_list[3] += 1
+student_pet_count_list[-1] += 2
+student_pet_count_list.append(4)
+
 NUM_OF_STUDENTS = len(student_pet_count_list)
 print(NUM_OF_STUDENTS)
 
 # average = sum / number of items
+TOTAL_NUM_PETS = 0;
+for PET_COUNT in student_pet_count_list:
+  TOTAL_NUM_PETS += PET_COUNT
+
+AVERAGE = TOTAL_NUM_PETS / NUM_OF_STUDENTS
+
+print(AVERAGE)
